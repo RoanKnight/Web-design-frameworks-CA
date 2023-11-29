@@ -1,0 +1,21 @@
+$list-group-item-margin: 5px 0px;
+$padding-left: 0rem;
+$width: 48%;
+$border-color: lightgrey;
+$border-width: 1px;
+$border: none;
+$border-radius: 5px;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+ul {
+    padding-left: $padding-left;
+}
+
+.list-group-item {
+    margin: $list-group-item-margin;
+}
+
+.sign-in_sign-up {
+    width: $width;
+}
