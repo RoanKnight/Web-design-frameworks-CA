@@ -11980,8 +11980,8 @@ ul {
   padding-left: 0rem;
 }
 
-.list-group-item {
-  margin: 10px 0px;
+.list-group-item:hover {
+  text-decoration: underline;
 }
 
 .sign-in_sign-up {

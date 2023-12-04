@@ -1,4 +1,4 @@
-$list-group-item-margin: 10px 0px;
+$nav-text-decoration: underline;
 $padding-left: 0rem;
 $width: 48%;
 $border-color: lightgrey;
@@ -12,8 +12,8 @@ ul {
     padding-left: $padding-left;
 }
 
-.list-group-item {
-    margin: $list-group-item-margin;
+.list-group-item:hover {
+    text-decoration: $nav-text-decoration;
 }
 
 .sign-in_sign-up {
