@@ -1,10 +1,14 @@
+$font-family: 'Open Sans', sans-serif;
+
 $nav-text-decoration: underline;
 $padding-left: 0rem;
 $width: 48%;
 $border-color: lightgrey;
 $border-width: 1px;
 $border: none;
-$border-radius: 5px;
+$border-radius: 10px;
+$grid-columns: 16;
+$grid-gutter-width: 0rem;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -18,4 +22,15 @@ ul {
 
 .sign-in_sign-up {
     width: $width;
+}
+
+.quantity {
+  width: 60px;
+  padding: 5px 0px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.cartButton {
+  margin-right: 20px;
 }
