@@ -1,87 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <title>Homepage</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Homepage</title>
+  </head>
+  <body>
 
-  <nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="/images/greenville_logo-removebg-preview.png" alt="Logo" width="80" height="60" class="d-inline-block align-text-top">
-      </a>
-      <div class="h2 text-center mx-auto">Greenville Deli</div>
-      <button class="btn" type="button"><a href="cart.html"><img src="images/shopping-cart-removebg-preview.png" alt="Logo" style="width: 30px; height: 30px;"></a></button>
-      <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="width: 60px; height: 50px;">
-        <span class="navbar-toggler-icon" style="width: 30px; height: 35px;"></span>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header border-bottom">
-          <img src="/images/greenville_logo-removebg-preview.png" alt="Logo" width="70" height="50" class="d-inline-block align-text-top">
-          <h5 class="offcanvas-title fs-4" id="offcanvasRightLabel">Greenville deli</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="navbar-brand">
+          <div class="rounded-4">
+            <ul class="d-flex flex-wrap list-unstyled my-0">
+              <li><button class="fs-5 list-group-item rounded-4 px-2 bg-success text-white">Home</button></li>
+              <li><button class="text-dark fs-5 list-group-item rounded-4 px-2">About us</button></li>
+              <li><button class="text-dark fs-5 list-group-item rounded-4 px-2 me-2">Contact us</button></li>
+            </ul>
+          </div>
         </div>
-        <div class="offcanvas-body">
-          <ul>
-
-            <li class="nav-link d-flex justify-content-between mb-5">
-            <button class="sign-in_sign-up btn btn-success"><a href="sign-up.html" class="list-group-item fs-5">Sign up</a></button>
-            <button class="sign-in_sign-up btn btn-success"><a href="sign-in.html" class=" list-group-item fs-5">Sign in</a></button></li>
-
-            <li class="nav-link mb-3"><a href="" class="text-dark fs-5 list-group-item"><div class="nav-item text-dark fs-5 list-group-item"><img src="images/location.png" class="me-2" alt="" width="20px">Our locations</div></a></li>
-
-            <li class="nav-link mb-3"><a href="" class="text-dark fs-5 list-group-item"><div class="nav-item text-dark fs-5 list-group-item"><img src="images/home.png" class="me-2" alt="" width="20px">Addresses</div></a></li>
-
-            <li class="nav-link mb-3"><a href="" class="text-dark fs-5 list-group-item"><div class="nav-item text-dark fs-5 list-group-item"><img src="images/credit-card.png" class="me-2" alt="" width="20px">Payment methods</div></a></li>
-
-            <li class="nav-link mb-3"><a href="" class="text-dark fs-5 list-group-item"><div class="nav-item text-dark fs-5 list-group-item"><img src="images/file.png" class="me-2" alt="" width="20px">Your orders</div></a></li>
-
-          </ul>
+        <div class="h2 text-center mx-auto flex-shrink-0"><a href="index.html"><img src="images/greenville_logo-removebg-preview.png" style="width: 100px;" alt=""></a></div>
+        <div class="d-flex flex-shrink-0">
+          <a href="sign-in.html" class="text-decoration-none"><button class="btn fs-5 px-2 border me-2" type="button">Sign in</button></a>
+          <a href="sign-up.html" class="text-decoration-none"><button class="btn fs-5 px-2 border me-2" type="button">Sign up</button></a>
+          <a href="cart.html" class="text-decoration-none">
+            <button class="btn fs-5 d-flex align-items-center border me-2" type="button">
+              <img src="images/Basket-icon.png" alt="" class="me-2">Basket
+            </button>
+          </a>
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="width: 60px; height: 50px;">
+            <span class="navbar-toggler-icon" style="width: 30px; height: 35px;"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header border-bottom">
+              <img src="/images/greenville_logo-removebg-preview.png" alt="Logo" width="70" height="50" class="d-inline-block align-text-top">
+              <h5 class="offcanvas-title fs-4" id="offcanvasRightLabel">Greenville deli</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="ps-0">
+                <li class="nav-link mb-3"><a href="" class="text-dark fs-5 list-group-item"><div class="nav-item text-dark fs-5 list-group-item"><img src="images/home.png" class="me-2" alt="" width="20px">Addresses</div></a></li>
+                <li class="nav-link mb-3"><a href="" class="text-dark fs-5 list-group-item"><div class="nav-item text-dark fs-5 list-group-item"><img src="images/credit-card.png" class="me-2" alt="" width="20px">Payment methods</div></a></li>
+                <li class="nav-link mb-3"><a href="orders.html" class="text-dark fs-5 list-group-item"><div class="nav-item text-dark fs-5 list-group-item"><img src="images/file.png" class="me-2" alt="" width="20px">Your orders</div></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <header>
-    <div class="position-relative text-center">
-      <img src="images/Greenville-Web-banner.jpg" alt="" style="width: 95%; max-height: 80vh;" class="rounded-4">
-      <div class="card-img-overlay text-center" style="transform: translateY(10%);">
-        <img src="images/Greenville-deli heading.png" alt="" width="400px">
+    <header>
+      <div class="position-relative text-center">
+        <img src="images/Greenville-Web-banner.jpg" alt="" style="width: 95%; max-height: 85vh;" class="rounded-5">
+        <div class="card-img-overlay text-center" style="transform: translateY(10%);">
+          <img src="images/Greenville-deli heading.png" alt="" class="img-fluid" style="max-width: 100%; height: auto;" width="400px">
+        </div>
       </div>
-    </div>
-  </header>
+    </header>       
 
-  <main id="#main">
+    <main id="#main">
 
-<section class="section2">
-  <div class="container">
-    <ul class="d-flex flex-wrap justify-content-between">
-      <li class="list-group-item active category1"><button class="menu-categories text-dark fs-5 list-group-item">Sandwiches</button></li>
-      <li class="list-group-item"><button class="menu-categories text-dark fs-5 list-group-item">Rolls</button></li>
-      <li class="list-group-item"><button class="menu-categories text-dark fs-5 list-group-item">Soups</button></li>
-      <li class="list-group-item"><button class="menu-categories text-dark fs-5 list-group-item">Salads</button></li>
-      <li class="list-group-item"><button class="menu-categories text-dark fs-5 list-group-item">Wraps</button></li>
-    </ul>
+      <section class="section2 mt-5">
+        <div class="container">
 
-    <div class="row row-gap-3 d-flex justify-content-between">
-      
-    </div>
-  </div>
+          <div class="d-flex justify-content-center">
+            <h2>Browse By Category</h2>
+          </div>
 
-</section>
+          <div class="d-flex justify-content-center my-5">
+            <div class="border rounded-4">
+              <ul class="d-flex flex-wrap justify-content-center column-gap-5 list-unstyled mb-0">
+                <li><button class="category1 menu-categories fs-5 list-group-item rounded-4 px-3">Sandwiches</button></li>
+                <li><button class="category2 menu-categories text-primary fs-5 list-group-item rounded-4 px-3">Rolls</button></li>
+                <li><button class="category3 menu-categories text-primary fs-5 list-group-item rounded-4 px-3">Soups</button></li>
+                <li><button class="category4 menu-categories text-primary fs-5 list-group-item rounded-4 px-3">Salads</button></li>
+                <li><button class="category5 menu-categories text-primary fs-5 list-group-item rounded-4 px-3">Wraps</button></li>
+              </ul>
+            </div>
+          </div>
 
- </main>
+          <div class="menuContent row row-cols-2 row-cols-lg-4">
+            <div class="col-md-8 col-sm-8 my-1">
+              <div class="card menuItem" style="height: 480px;">
+                <img src="${item.image}" class="card-img-top" alt="" style="height: 200px">
+                <div class="card-body">
+                  <h5 class="card-title">${item.name}</h5>
+                  <p class="card-text">${item.description}</p>
+                </div>
+                <div class="card-footer d-flex bg-success justify-content-between">
+                  <h4 class="price text-light">${item.price}</h4>
+                  <div class="buttons">
+                    <img src="${item.cartIcon}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        </div>
+      </section>
 
-<script type="module" src="javascript/app.js"></script>
-  
-</body>
+      <section class="section3" style="height: 400px;">
+        <div class="container mt-5">
+          <h2 class="d-flex justify-content-center mb-5">Our locations</h2>
+          <div class="position-relative overflow-hidden overflow-visible" style="height: 200px;">
+            <div class="position-absolute" style="transform: translateY(40%); background-color: rgba(169, 169, 169, 15%); width: 100%; height: 200px; z-index: 1;"></div>
+            <div class="locations d-flex justify-content-center">
+              <a href="#" class="location1 position-relative text-center text-decoration-none" style="z-index: 2; position: relative;">
+                <img src="/images/locations/location-1.jpg" class="mx-3 mt-1" alt="" style="z-index: 2; width: 250px; height: 150px;">
+                <div class="text-light" style="transform: translateY(-250%);">
+                  <h2 class="fs-2">Rathmines</h2>
+                </div>
+              </a>
+              <a href="#" class="location2 position-relative text-center text-decoration-none" style="z-index: 2; position: relative;">
+                <img src="/images/locations/location-2.jpg" class="mx-3 mt-1" alt="" style="z-index: 2; width: 250px; height: 150px;">
+                <div class="text-light" style="transform: translateY(-250%);">
+                  <h2 class="fs-2">Inchicore</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer-section bg-dark text-white text-center text-lg-start">
+        <div class="container my-5 p-4">
+          <div class="row mt-4">
+            <div class="col-lg col-md mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Social media</h5>
+              <div class="mt-4">
+                <a href="" class="me-2"><img src="images/facebook-icon.png" alt=""></a>
+                <a href="" class="me-2"><img src="images/instagram-icon.png" alt=""></a>
+                <a href=""  class="me-2"><img src="images/twitter-icon.png" alt=""></a>
+              </div>
+            </div>
+
+            <div class="col-lg col-md">
+              <h5 class="text-uppercase mb-4">Contact us</h5>
+              <ul class="ps-0">
+                <li class="mb-3 list-unstyled">
+                  <span>312 Rathmines Rd Lower, Rathmines, Dublin 6, D06 HX53</span>
+                </li>
+                <li class="mb-3 list-unstyled">
+                  <span>5A Tyrconnell Rd, Inchicore, Dublin 8, D08 R8Y2</span>
+                </li>
+                <li class="mb-3 list-unstyled">
+                  <span>contact@example.com</span>
+                </li>
+                <li class="mb-3 list-unstyled">
+                  <span>0892094288</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg col-md mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Opening hours</h5>
+              <table class="table text-center text-white">
+                <tbody class="fw-normal">
+                  <tr>
+                    <td>Mon - Thu:</td>
+                    <td>8am - 5pm</td>
+                  </tr>
+                  <tr>
+                    <td>Fri - Sat:</td>
+                    <td>8am - 6pm</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday:</td>
+                    <td>9am - 5pm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-white" href="https://www.greenvilledeli.ie/">greenvilledeli.ie</a>
+        </div>
+      </section>
+
+    </main>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <script type="module" src="javascript/app.js"></script>
 </html>

@@ -1,0 +1,50 @@
+export const soups = [
+  {
+      id: "qwoduiqvoidwuq-o345io2ub3iru-6k7j8v6iv",
+      image: "../images/soups/soup-1.jpg",
+      name: "Tom Kha Gai",
+      description: "Hot and sour soup with coconut milk, mushrooms fresh chilli, broccoli and coriander. Contains Cereals, Milk, Fish, Crustaceans, Soya.",
+      price: "€7:99",
+      cartIcon: "../images/shopping-cart.png",
+  },
+  {
+      id: "iquwdqwgvd-jbbu12i1-kj65bui5",
+      image: "../images/soups/soup-2.jpg",
+      name: "Tom Yam Goong Soup",
+      description: "Thailand's iconic hot and sour soup, made with tomato and prawn. 192 Cals.",
+      price: "€8:99",
+      cartIcon: "../images/shopping-cart.png",
+  },
+  {
+      id: "wieufbwiuef823-weifuv2iur-i2riv34iuy6v",
+      image: "../images/soups/soup-3.jpg",
+      name: "Hot and Sour Soup",
+      description: "Szechuan style. Sulphur Dioxide, Eggs, Cereals (Wheat) and Soya.",
+      price: "€5:99",
+      cartIcon: "../images/shopping-cart.png",
+  },
+  {
+    id: "uy45uy235-346v346-k4134iwgr",
+    image: "../images/soups/soup-4.jpg",
+    name: "Hunters Harvest Soup",
+    description: "Bacon, Savoury Broth, Red Cabbage, Spinach, Carrots, Spring Onion & Roast Sweet Potato or Noodles.",
+    price: "€10:99",
+    cartIcon: "../images/shopping-cart.png",
+  },
+  {
+    id: "qwiudviqivi-weugfwuiyvf-2435v2u35",
+    image: "../images/soups/soup-5.jpg",
+    name: "Thai Chicken & Lime Noodle Soup",
+    description: "Asian Chicken, Savoury Broth, Mixed Peppers, Fine Noodles, Spring Onion, Mange Tout, Aromatic Asian Tapenade, Soy Sauce, Fish Sauce, Lime & Coriander.",
+    price: "€19:99",
+    cartIcon: "../images/shopping-cart.png",
+  },
+  {
+    id: "wrefubwfe-232-23414ru11riueiw",
+    image: "../images/soups/soup-6.jpg",
+    name: "Hot & Spicy Chicken Noodle Soup",
+    description: "Mexican Chicken, Savoury Broth, Tex Mex Seasoning, Mixed Peppers, Spring Onion, Fine Noodles, Jalapenos & Lime.",
+    price: "€11:99",
+    cartIcon: "../images/shopping-cart.png",
+  }
+]

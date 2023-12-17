@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Your orders</title>
+</head>
+
+<body style="background-color: #DFDFDF;">
+
+  <nav class="navbar bg-body-tertiary">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="navbar-brand">
+        <div class="rounded-4">
+          <ul class="d-flex flex-wrap list-unstyled my-0">
+            <li><button class="fs-5 list-group-item rounded-4 px-2 bg-success text-white">Home</button></li>
+            <li><button class="text-dark fs-5 list-group-item rounded-4 px-2">About us</button></li>
+            <li><button class="text-dark fs-5 list-group-item rounded-4 px-2 me-2">Contact us</button></li>
+          </ul>
+        </div>
+      </div>
+      <div class="h2 text-center mx-auto flex-shrink-0">
+        <a href="index.html"><img src="images/greenville_logo-removebg-preview.png" style="width: 100px;" alt=""></a>
+      </div>
+      <div class="d-flex flex-shrink-0">
+        <a href="sign-in.html" class="text-decoration-none"><button class="btn fs-5 px-2 border me-2" type="button">Sign in</button></a>
+        <a href="sign-up.html" class="text-decoration-none"><button class="btn fs-5 px-2 border me-2" type="button">Sign up</button></a>
+        <a href="cart.html" class="text-decoration-none">
+          <button class="btn fs-5 d-flex align-items-center border me-2" type="button">
+            <img src="images/Basket-icon.png" alt="" class="me-2">Basket
+          </button>
+        </a>
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="width: 60px; height: 50px;">
+          <span class="navbar-toggler-icon" style="width: 30px; height: 35px;"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header border-bottom">
+            <img src="/images/greenville_logo-removebg-preview.png" alt="Logo" width="70" height="50" class="d-inline-block align-text-top">
+            <h5 class="offcanvas-title fs-4" id="offcanvasRightLabel">Greenville deli</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="ps-0">
+              <li class="nav-link mb-3"><a href="" class="text-dark fs-5 list-group-item"><div class="nav-item text-dark fs-5 list-group-item"><img src="images/home.png" class="me-2" alt="" width="20px">Addresses</div></a></li>
+              <li class="nav-link mb-3"><a href="" class="text-dark fs-5 list-group-item"><div class="nav-item text-dark fs-5 list-group-item"><img src="images/credit-card.png" class="me-2" alt="" width="20px">Payment methods</div></a></li>
+              <li class="nav-link mb-3"><a href="orders.html" class="text-dark fs-5 list-group-item"><div class="nav-item text-dark fs-5 list-group-item"><img src="images/file.png" class="me-2" alt="" width="20px">Your orders</div></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-11">
+        <div class="bg-white p-4 rounded-5">
+          <div class="d-flex justify-content-between border-bottom border-black border-2 pb-3 mb-4">
+            <div class="d-inline-block">
+              <h3>Shopping cart</h3>
+            </div>
+            <div class="d-flex">
+              <p>3 items(s)</p>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between flex-column flex-md-row pb-sm-4 mb-4">
+            <img src="images/sandwiches/sandwich-2.webp" width="300px" alt="" class="me-3">
+            <div class="content">
+              <h4 class="mb-2">Turkey Feast Sandwich</h4>
+              <p class="mb-4">Sliced Turkey, Pulled Jerk Ham, Cranberry Sauce & Christmas Stuffing in thick Malted Grain Bread.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <h4>€5:99</h4>
+                <div class="d-flex">
+                  <img src="images/minus.png" class="me-3" width="25px" height="25px" alt="">
+                  <p>1</p>
+                  <img src="images/add.png" class="ms-3" width="25px" height="25px" alt="">
+                  <img src="images/bin.png" class="ms-4" width="25px" height="25px" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between flex-column flex-md-row pb-sm-4 mb-4">
+            <img src="images/sandwiches/sandwich-1.jpg" width="300px" alt="" class="me-3">
+            <div class="content">
+              <h4 class="mb-2">Ham and cheese toatsie</h4>
+              <p class="mb-4">Honey-baked glazed ham and mature farmhouse cheddar on toasted white or brown.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <h4>€3:99</h4>
+                <div class="d-flex">
+                  <img src="images/minus.png" class="me-3" width="25px" height="25px" alt="">
+                  <p>1</p>
+                  <img src="images/add.png" class="ms-3" width="25px" height="25px" alt="">
+                  <img src="images/bin.png" class="ms-4" width="25px" height="25px" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between flex-column flex-md-row pb-sm-4 mb-4">
+            <img src="images/sandwiches/sandwich-4.jpg" width="300px" alt="" class="me-3">
+            <div class="content">
+              <h4 class="mb-2">Club Sandwich</h4>
+              <p class="mb-4">Chicken, bacon, tomato, lettuce and mayo on toasted white or brown.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <h4>€13:99</h4>
+                <div class="d-flex">
+                  <img src="images/minus.png" class="me-3" width="25px" height="25px" alt="">
+                  <p>1</p>
+                  <img src="images/add.png" class="ms-3" width="25px" height="25px" alt="">
+                  <img src="images/bin.png" class="ms-4" width="25px" height="25px" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-5 bg-success rounded-5 d-inline-block">
+        <div class="mx-3">
+          <h3 class="text-white border-bottom mb-4 pb-2 mt-3">Order summary</h3>
+
+          <div class="d-flex justify-content-between mb-3">
+            <h5 class="text-white">Subtotal: </h5>
+            <h5 class="text-white">€23:97</h5>
+          </div>
+
+          <div class="d-flex justify-content-between mb-4">
+            <h5 class="text-white">Delivery cost: </h5>
+            <h5 class="text-white">€0:00</h5>
+          </div>
+
+          <div class="d-flex justify-content-between mb-5">
+            <h3 class="text-primary">Total: </h3>
+            <h3 class="text-primary">€23:97</h3>
+          </div>
+
+          <h3 class="text-white border-bottom mb-4 pb-2 mt-3">Payment methods</h3>
+
+          <div class="mb-3 align-items-center bg-white px-3 rounded-3 border border-primary" style="box-shadow: inset 0 4px 10px rgba(100, 100, 100, 0.8);">
+            <div class="d-flex align-items-center">
+              <p class="mb-0">**** 1234</p>
+              <img src="images/visa.png" width="50px" height="50px" alt="" class="ms-auto">
+            </div>
+          </div>
+
+          <div class="mb-3 align-items-center bg-white px-3 rounded-3 border border-primary py-2 mb-5" style="box-shadow: inset 0 4px 10px rgba(100, 100, 100, 0.8);">
+            <div class="d-flex align-items-center">
+              <p class="mb-0">Add a payment method</p>
+              <img src="images/add.png" width="30px" height="30px" alt="" class="ms-auto">
+            </div>
+          </div>
+
+          <div class="mb-3 align-items-center bg-primary px-3 rounded-3 py-2 mt-5 border border-success">
+            <button type="button" class="w-100 btn d-flex justify-content-between">
+              <h4 class="mb-0">Pay now</h4>
+              <h4 class="my-auto">€23:97</h4>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <script type="module" src="javascript/app.js"></script>
+</body>
+
+</html>
